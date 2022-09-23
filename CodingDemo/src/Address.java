@@ -37,7 +37,6 @@ public class Address implements Comparable<Address> {
     }
 
 
-
     @Override
     public String toString() {
         return "Address{" +
@@ -49,6 +48,6 @@ public class Address implements Comparable<Address> {
 
     @Override
     public int compareTo(Address o) {
-        return this.getPincode()-o.getPincode();
+        return this.getPincode() - o.getPincode();
     }
 }

@@ -9,7 +9,7 @@ public class Main {
         Employee e1 = new Employee(1, "Ashwani", new Address("s1", "delhi", 110059));
         Employee e2 = new Employee(2, "Ashwani3", new Address("s1", "delhi", 110057));
         Employee e3 = new Employee(3, "Ashwani4", new Address("s1", "delhi", 1100591));
-        Employee e4 = new Employee(4,"Ashwani2", new Address("s1", "delhi", 110058));
+        Employee e4 = new Employee(4, "Ashwani2", new Address("s1", "delhi", 110058));
 
         List<Employee> employeeList = new ArrayList<Employee>();
         employeeList.add(e1);
@@ -20,13 +20,13 @@ public class Main {
         employeeList.stream().forEach(System.out::println);
         //Using Java 8
         System.out.println("Sorted by ID ");
-        employeeList.stream().sorted((em1,em2)-> em1.getId()-em2.getId()).forEach(System.out::println);
+        employeeList.stream().sorted((em1, em2) -> em1.getId() - em2.getId()).forEach(System.out::println);
 
         System.out.println("Sorted by Address ");
-        employeeList.stream().sorted((em1,em2)-> em1.getAddress().compareTo(em2.getAddress())).forEach(System.out::println);
+        employeeList.stream().sorted((em1, em2) -> em1.getAddress().compareTo(em2.getAddress())).forEach(System.out::println);
 
         System.out.println("Sorted by Name ");
-        employeeList.stream().sorted((em1,em2)-> em1.getName().compareTo(em2.getName())).forEach(System.out::println);
+        employeeList.stream().sorted((em1, em2) -> em1.getName().compareTo(em2.getName())).forEach(System.out::println);
 
         //Using older Java code by implementing comparator.
 
